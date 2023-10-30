@@ -1,0 +1,31 @@
+:root {
+  --background-color: ;
+  --background-image: ;
+  --todo-background: ;
+  --todo-fontColor: ;
+  --todo-secondary-fontColor: ;
+}
+
+.theme-light {
+  --background-color: #FAFAFA;
+  --background-image: url('./assets/bg-desktop-light.jpg');
+  --todo-background: #FFFFFF;
+  --todo-fontColor: #25273C;
+  --todo-secondary-fontColor: hsl(236, 9%, 61%);
+}
+
+.theme-dark {
+  --background-color: #181824;
+  --background-image: url('./assets/bg-desktop-dark.jpg');
+  --todo-background: #25273C;
+  --todo-fontColor: hsl(234, 39%, 85%);
+  --todo-secondary-fontColor: hsl(234, 11%, 52%);
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

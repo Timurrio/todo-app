@@ -1,0 +1,39 @@
+.todoList__item {
+    display: flex;
+    align-items: center;
+    background-color: var(--todo-background);
+    color: var(--todo-fontColor);
+    width: 100%;
+    border-bottom: 1px solid var(--todo-secondary-fontColor);
+    padding: 15px;
+    font-size: 24px;
+
+    &:hover {
+        .clear_button {
+            visibility: visible;
+        }
+    }
+
+    &:first-of-type {
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+    }
+}
+
+.completed {
+    .task {
+        color: var(--todo-secondary-fontColor);
+        text-decoration: line-through;
+    }
+}
+
+.task {
+    padding: 5px;
+    width: 80%;
+    overflow-wrap: break-word;
+}
+
+.clear_button {
+    margin-left: auto;
+    visibility: hidden;
+}

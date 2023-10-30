@@ -1,0 +1,20 @@
+.todoTabs__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab {
+    padding: 5px;
+
+    &:hover {
+        color: var(--todo-fontColor);
+    }
+}
+
+.active {
+    color: #4776DF;
+
+    &:hover {
+        color: #4776DF;
+    }
+}

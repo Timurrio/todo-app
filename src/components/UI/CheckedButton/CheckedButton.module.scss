@@ -1,0 +1,54 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--todo-background);
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    transition: 0.15s;
+
+    svg {
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    // &:hover {
+    //     background: none;
+
+    //     svg {
+    //         opacity: 1;
+    //         transition: 0.3s;
+
+    //     }
+    // }
+
+}
+
+.active {
+    background: linear-gradient(45deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+    .button {
+        background: linear-gradient(45deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    }
+
+    svg {
+        opacity: 1;
+
+    }
+}
+
+.button_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px 10px 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: gray;
+
+    &:hover {
+        background: linear-gradient(45deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    }
+}
